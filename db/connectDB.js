@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+// datbase connection setup
 const DBConnectionSetup = (url) => {
     return mongoose.connect(url);
 }

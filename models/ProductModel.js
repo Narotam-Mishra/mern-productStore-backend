@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+// Product's schema design
 const ProductSchema = mongoose.Schema(
     {
         productName:{
@@ -9,7 +10,7 @@ const ProductSchema = mongoose.Schema(
             maxlenght:[91, 'product name can not be more than 91 characters']
         },
         price:{
-            type: Number,
+            type: String,
             required: [true, 'must provide product price'],
         },
         quantity:{
